@@ -1,5 +1,5 @@
 #ifndef HELPERS_H
-#define HELPERS
+#define HELPERS_H
 
 /*
  * Returns a number that is not 0 and no greater than `max`.
