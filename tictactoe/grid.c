@@ -7,7 +7,7 @@ struct Grid new_grid(const unsigned size) {
     unsigned i, len;
 
     // considering that currently the grid size is always 9 (3 * 3),
-    // this could've been an array but I decided to leave it as it-is
+    // this could've been an array but I decided to leave it as-is
     len = get_grid_cells_len(size);
     enum Cell *cells = malloc(len * sizeof(enum Cell));
     for (i = 0; i < len; ++i)
