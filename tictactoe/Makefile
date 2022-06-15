@@ -1,5 +1,8 @@
+CFLAGS_WARNINGS=-Wall -Wextra -Wpedantic -Werror
+CLFAGS=$(CFLAGS_WARNINGS) -std=c99 -lm
+
 build:
-	gcc main.c grid.c helpers.c -o tictactoe -std=c99 -lm -Wall -Wextra -Wpedantic -Werror
+	cc main.c grid.c helpers.c -o tictactoe $(CLFAGS)
 
 run: build
 	./tictactoe
